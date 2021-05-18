@@ -55,7 +55,7 @@ public interface StudentMapper extends BaseMapper<Student> {
      * @param student
      * @return
      */
-    @Insert("INSERT INTO student(class_id, student_id, teacher_id, `name`, role, password) " +
+    @Insert("INSERT INTO student(class_id, student_id, teacher_id, name, role, password) " +
             "VALUES (#{classId}, #{studentId}, #{teacherId}, #{name}, #{role}, #{password})")
     int insertStudent(Student student);
 
